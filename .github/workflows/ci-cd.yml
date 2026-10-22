@@ -62,4 +62,4 @@ jobs:
             podman pull $IMAGE
             podman stop app || true
             podman rm app || true
-            podman run -d --name app -p 80:3000 $IMAGE
+            podman run -d --name app -p 8080:3000 $IMAGE
